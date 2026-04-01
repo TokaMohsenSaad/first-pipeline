@@ -7,12 +7,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Code') {
-            steps {
-                git branch: 'master', url: 'https://github.com/TokaMohsenSaad/first-pipeline.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 script {
